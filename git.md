@@ -87,3 +87,23 @@ https://opentutorials.org/course/2708/15275
 - 2가지 역할 : 백업과 협업
 - git init --bare 별명 사용할위치
 - 원격 저장소에 push하기(origin에 master를!) : git push origin master
+
+
+## git config에 대해서
+- `git config --global .. `에서 `--global`옵션은 해당 시스템에서 해당 사용자가 사용할 때 설정하는 값이다.(기본적으로 셋팅할 값)
+- `--global`옵션을 빼고 명령을 실행하면 저장소(프로젝트)마다 다른 이름과 이메일 주소를 사용할 수 있다.
+
+## .gitignore 파일 설정
+- Git으로 프로젝트를 관리하면서 관리가 필요하지 않은 파일들이 있다. (ex. 자동으로 생성되는 로그파일들, 빌드할 때 생기는 컴파일된 파일들 등등) 이런 파일들은 git status를 조회할 때마다 항상 untracked 되어있거나 modified로 되어 있어서 진짜 필요한 정보들을 보기 힘들어 질 수 있다. 그래서 이런 파일들을 git 시스템에서 무시해서 파일안에 목록으로 만들 수 있다.
+- [git 공식사이트에서 gitignore에 관한 문서 링크](https://git-scm.com/docs/gitignore)
+- [Ignoring FIles - git home 링크](https://www.git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
+
+## Git 커밋 메시지 작성법
+- 좋은 커밋 메시지를 위한 7가지 규칙
+    1. 제목과 본문을 빈 행으로 분리한다.
+    2. 제목 행을 50자로 제한한다.
+    3. 제목 행 첫 글자는 대문자로 쓴다.
+    4. 제목 행 끝에 마침표를 넣지 않는다.
+    5. 제목 행에 명령문을 사용한다.
+    6. 본문을 72자 단위로 개행한다.
+    7. **어떻게 보다는 무엇과 왜를 설명한다.**
